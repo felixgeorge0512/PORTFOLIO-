@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f5f5f5;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 20px;
+      }
+      .card {
+        background: white;
+        display: flex;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        max-width: 900px;
+        width: 100%;
+      }
+      .image-section {
+        flex: 1;
+        position: relative;
+        background: radial-gradient(
+          circle at top left,
+          #c1a78e 0%,
+          transparent 60%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+      }
+      .image-section img {
+        border-radius: 15px;
+        width: 100%;
+        max-width: 320px;
+        object-fit: cover;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      }
+      .text-section {
+        flex: 1;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .text-section h1 {
+        font-size: 36px;
+        margin: 0 0 10px;
+        color: #222;
+      }
+      .text-section p {
+        color: #555;
+        margin: 0 0 20px;
+        font-size: 16px;
+      }
+      .creator {
+        margin-top: auto;
+        font-size: 14px;
+        color: #777;
+      }
+      .creator span {
+        font-weight: bold;
+        color: #333;
+      }
+      @media (max-width: 768px) {
+        .card {
+          flex-direction: column;
+          text-align: center;
+        }
+        .image-section,
+        .text-section {
+          padding: 20px;
+        }
+        .image-section img {
+          max-width: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="image-section">
+          <img src="fg .edited.jpg" alt="Profile Photo" />
+        </div>
+        <div class="text-section">
+          <h1>Personal Portfolio</h1>
+          <p>
+            I am felix and i am currently studying B.TEC AIDS engineering course
+            in shree venkateshwara engineering college at othakkuthirai
+          </p>
+          <div class="creator">Created by <span>FELIX</span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
